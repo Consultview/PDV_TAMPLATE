@@ -1,0 +1,119 @@
+        /* CSS para o layout */
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /*define o titulo menu*/
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 1px;
+            text-align: center;
+            font-size: 70%;
+            margin-top: 0px; /* margem superior para evitar sobreposição */
+            position: relative; /* para que a posição do ícone seja relativa a esse elemento */
+        }
+        
+        .menu-icon {
+            font-size: 35px;
+            background-color: #dddddd00;
+            color: #ffffff;
+            position: absolute; /* posicionamento absoluto */
+            top: -10px;
+            left: 0px;
+            padding: 5px;
+        }
+        
+
+      /*  define o titulo rodape*/
+        .footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            font-size: 100%;
+          }
+          
+          
+
+/*define o tamano do icone*/
+        .icon {
+            font-size: 20px;
+        }
+
+        .menu {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+
+        /*define a cor do menu*/
+        .menu a {
+            float: left;
+            display: block;
+            color: #333;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+        }
+
+
+        .menu a:hover {
+            background-color: #ddd;
+            color: #333;
+          
+        }
+
+
+        /*esconde o menu na tela min*/
+        @media screen and (min-width: 500px) {
+            .menu-icon {
+              display: none;
+            }
+          }
+          
+        /*mostra o menu na tela max*/
+        @media screen and (max-width: 500px) {
+            .menu {
+              display: none;
+            }
+            
+            .menu-icon {
+              display: block;
+            }
+          }
+          /*faz com que o elemento do menu seja mostrado quando a classe show-menu é adicionada , ignorando a regra de estilo display: none que está sendo aplicada em telas menores que 600 pixels.*/
+          .show-menu {
+            display: block !important;
+          }
+          
+          /*botao de pesquisa*/
+          #search-box {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            
+           
+            width: 100%;
+            margin: 2 auto;
+           
+          }
+          
+          #search-box .input-group-text {
+            background-color: #f1f1f1;
+            border-color: #c4c1c1;
+            color: #333;
+          }
+          
+          #search-box .form-control {
+            border-color: #f1f1f1;
+          }
+          
